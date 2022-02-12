@@ -18,11 +18,21 @@ const Header = () => {
 	return (
 		<div className="flex sticky top-0 z-60 bg-white items-center shadow-md justify-between">
 			{/* left */}
-			<div>
-				<Image src={Logo} alt="Logo" />
+			<div className="h-14 w-24">
+				<Image src={Logo} alt="Logo"  height={70} width={110} />
+			</div>
+			<div className="hidden md:flex items-center ml-2 rounded-full bg-gray-100 p-2">
+				<MdSearch className="h-6 text-indigo-700 text-4xl" />
+				<input
+					className="hidden lg:inline-flex bg-transparent text-xl"
+					type="text"
+					name="search"
+					id="search"
+					placeholder="searching..."
+				/>
 			</div>
 			{/* center */}
-			<div className="flex items-center justify-center flex-grow">
+			<div className="flex items-center justify-around flex-grow">
 				<HeaderIcon active Icon={MdHome} />
 				<HeaderIcon Icon={MdVideoLibrary} />
 				<HeaderIcon Icon={MdGroups} />
@@ -30,22 +40,12 @@ const Header = () => {
 			</div>
 			{/* right */}
 			<div className="flex items-center justify-center">
-				<div className="flex items-center ml-2 rounded-full bg-gray-100 p-2">
-					<MdSearch className="h-6 text-gray-600 text-4xl" />
-					<input
-						className="bg-transparent text-xl"
-						type="text"
-						name="search"
-						id="search"
-						placeholder="searching..."
-					/>
-				</div>
 				<div className="flex items-center justify-center">
 					{isLogged ? (
 						<div className="flex items-center justify-center">
-							<MdNotificationsNone className="text-3xl text-yellow-500 mx-2" />
-							<AiOutlineMessage className="text-3xl text-green-500 mx-2" />
-							<MdOutlineSettings className="text-3xl text-purple-800 mx-2" />
+							<MdNotificationsNone className="icon text-yellow-500 mx-2" />
+							<AiOutlineMessage className="icon text-green-500 mx-2" />
+							<MdOutlineSettings className="icon text-purple-800 mx-2" />
 							<FaUserAlt className="text-5xl border-2 border-emerald-500 p-1 rounded-full text-indigo-700" />
 						</div>
 					) : (
