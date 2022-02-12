@@ -22,14 +22,14 @@ const Header = () => {
 				<Image src={Logo} alt="Logo" />
 			</div>
 			{/* center */}
-			<div className="flex items-center justify-center flex-grow md:hidden sm:hidden">
-				<HeaderIcon Icon={MdHome} />
+			<div className="flex items-center justify-center flex-grow">
+				<HeaderIcon active Icon={MdHome} />
 				<HeaderIcon Icon={MdVideoLibrary} />
 				<HeaderIcon Icon={MdGroups} />
 				<HeaderIcon Icon={MdShop2} />
 			</div>
 			{/* right */}
-			<div className="flex items-center justify-center sm:hidden">
+			<div className="flex items-center justify-center">
 				<div className="flex items-center ml-2 rounded-full bg-gray-100 p-2">
 					<MdSearch className="h-6 text-gray-600 text-4xl" />
 					<input
