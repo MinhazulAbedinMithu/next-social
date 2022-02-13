@@ -11,7 +11,7 @@ import {
 import { AiOutlineMessage } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
 import Logo from "../images/logo.png";
-import { HeaderIcon } from "../utility";
+import { HeaderIcon } from "../utilities";
 
 const Header = () => {
 	const isLogged = true;

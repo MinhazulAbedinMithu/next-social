@@ -1,7 +1,7 @@
 
 const Widgets = () => {
   return (
-    <div>
+    <div className="1/5">
       <h4>widgets</h4>
     </div>
   );
