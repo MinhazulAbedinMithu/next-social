@@ -19,7 +19,7 @@ const Header = () => {
 		<div className="flex sticky top-0 z-60 bg-white items-center shadow-md justify-between">
 			{/* left */}
 			<div className="h-14 w-24">
-				<Image src={Logo} alt="Logo"  height={70} width={110} />
+				<Image src={Logo} alt="Logo" height={70} width={110} />
 			</div>
 			<div className="hidden md:flex items-center ml-2 rounded-full bg-gray-100 p-2">
 				<MdSearch className="h-6 text-indigo-700 text-4xl" />
@@ -46,7 +46,7 @@ const Header = () => {
 							<MdNotificationsNone className="icon text-yellow-500 mx-2" />
 							<AiOutlineMessage className="icon text-green-500 mx-2" />
 							<MdOutlineSettings className="icon text-purple-800 mx-2" />
-							<FaUserAlt className="text-5xl border-2 border-emerald-500 p-1 rounded-full text-indigo-700" />
+							<FaUserAlt className="text-5xl border-2 border-emerald-500 p-1 rounded-full text-indigo-700 cursor-pointer" />
 						</div>
 					) : (
 						<div className="flex items-center justify-center">

@@ -7,7 +7,7 @@ import NewFeedsItem from "./NewFeedsItem";
 const NewFeeds = () => {
 	return (
 		<div className="">
-			<h2 className="text-3xl text-red-400	">New Feeds</h2>
+			<h2 className="text-2xl font-bold mb-2 text-blue-400">News Feeds</h2>
 			<NewFeedsItem Icon={CgFeed} title="New Feeds" />
 			<NewFeedsItem Icon={RiProfileFill} title="Profile" />
 			<NewFeedsItem Icon={GiThreeFriends} title="Friends" />

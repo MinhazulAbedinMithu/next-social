@@ -13,12 +13,12 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Header/>
-      <main className="flex items-center justify-between ">
-        <Sidebar/>
-        <Feeds/>
-        <Widgets/>
-      </main>
+			<Header />
+			<main className="flex justify-between ">
+				<Sidebar />
+				<Feeds />
+				<Widgets />
+			</main>
 		</div>
 	);
 };
