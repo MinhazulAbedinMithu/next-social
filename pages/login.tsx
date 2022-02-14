@@ -10,6 +10,7 @@ interface ISubmitState {
 
 const login: NextPage<ISubmitState> = () => {
 	const [username, setUsername] = useState<string>("");
+	// const [username, setUsername] = useState<string>("");
 
 	return (
 		<div className="w-full h-full">
