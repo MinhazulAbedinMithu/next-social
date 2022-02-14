@@ -16,7 +16,7 @@ import { HeaderIcon } from "../utilities";
 const Header = () => {
 	const isLogged = true;
 	return (
-		<div className="flex sticky top-0 z-60 bg-white items-center shadow-md justify-between">
+		<div className="flex sticky top-0 z-[100] bg-white items-center shadow-md justify-between">
 			{/* left */}
 			<div className="h-14 w-24">
 				<Image src={Logo} alt="Logo" height={70} width={110} />
