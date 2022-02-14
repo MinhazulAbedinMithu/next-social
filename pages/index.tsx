@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { Feeds, Header, Sidebar, Widgets } from "../components";
 import styles from "../styles/Home.module.css";
 
@@ -13,12 +12,12 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Header/>
-      <main className="flex items-center justify-between ">
-        <Sidebar/>
-        <Feeds/>
-        <Widgets/>
-      </main>
+			<Header />
+			<main className="flex justify-between ">
+				<Sidebar />
+				<Feeds />
+				<Widgets />
+			</main>
 		</div>
 	);
 };
